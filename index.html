@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PDF Maker: Scan &amp; Convert PDF</title>
+    <meta name="description" content="Privacy Policy for PDF Maker: Scan & Convert PDF Android Application. Explains on-device processing, camera and storage permissions, Google AdMob disclosures, and Google Play Data Safety compliance.">
+    <style>
+        :root {
+            --primary: #1A73E8;
+            --primary-dark: #1557B0;
+            --primary-light: #E8F0FE;
+            --text-main: #202124;
+            --text-secondary: #5F6368;
+            --bg-page: #F8F9FA;
+            --bg-card: #FFFFFF;
+            --border: #DADCE0;
+            --success: #1E8E3E;
+            --warning: #F9AB00;
+            --tag-bg: #E8F0FE;
+            --tag-text: #1967D2;
+            --shadow: 0 1px 3px rgba(60,64,67, 0.12), 0 1px 2px rgba(60,64,67, 0.24);
+            --radius: 12px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #8AB4F8;
+                --primary-dark: #AECBFA;
+                --primary-light: #172B4D;
+                --text-main: #E8EAED;
+                --text-secondary: #9AA0A6;
+                --bg-page: #121212;
+                --bg-card: #1E1E1E;
+                --border: #3C4043;
+                --success: #81C995;
+                --tag-bg: #1F2A3D;
+                --tag-text: #8AB4F8;
+                --shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #FFFFFF;
+            padding: 40px 32px;
+            text-align: left;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            color: #FFFFFF;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 8px;
+        }
+
+        .app-meta {
+            font-size: 0.95rem;
+            opacity: 0.92;
+            margin-top: 6px;
+        }
+
+        .meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 16px 32px;
+            background: var(--primary-light);
+            color: var(--text-main);
+            font-size: 0.88rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .meta-bar strong {
+            color: var(--primary);
+        }
+
+        main {
+            padding: 36px 32px;
+        }
+
+        .summary-card {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 20px 24px;
+            border-radius: 8px;
+            margin-bottom: 32px;
+        }
+
+        .summary-card h2 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-card p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        p, ul, ol {
+            margin-bottom: 16px;
+            color: var(--text-main);
+            font-size: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--primary-light);
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tag-pill {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .contact-box {
+            background: var(--bg-page);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-top: 24px;
+        }
+
+        footer {
+            padding: 24px 32px;
+            background: var(--bg-page);
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 28px 20px;
+            }
+            h1 {
+                font-size: 1.65rem;
+            }
+            main {
+                padding: 24px 20px;
+            }
+            .meta-bar {
+                padding: 14px 20px;
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge">Google Play Policy Compliant</span>
+        <h1>Privacy Policy</h1>
+        <div class="app-meta">Application: <strong>PDF Maker: Scan &amp; Convert PDF</strong> (PDF Maker)</div>
+    </header>
+
+    <div class="meta-bar">
+        <div><strong>Application ID:</strong> com.aistudio.pdfmaker.zqpvkm</div>
+        <div><strong>Developer:</strong> WebScale Agency</div>
+        <div><strong>Effective Date:</strong> October 15, 2026</div>
+        <div><strong>Last Updated:</strong> October 15, 2026</div>
+    </div>
+
+    <main>
+        <div class="summary-card">
+            <h2>🛡️ Privacy Highlights at a Glance</h2>
+            <p>
+                <strong>100% On-Device Document Processing:</strong> PDF Maker operates locally on your Android device. Your photos, camera document scans, and generated PDF files are processed, rendered, compressed, and stored strictly on your local device. <strong>We do not run external file servers, and your documents are NEVER uploaded, stored, or viewed by us.</strong>
+            </p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            This Privacy Policy governs the manner in which <strong>WebScale Agency</strong> ("we", "us", or "our") collects, uses, maintains, and discloses information collected from users ("you" or "User") of the <strong>PDF Maker: Scan &amp; Convert PDF</strong> Android mobile application (the "App").
+        </p>
+        <p>
+            We are committed to protecting your privacy and complying with Google Play Developer Program Policies, the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), and the Children's Online Privacy Protection Act (COPPA).
+        </p>
+
+        <h2>2. Data We Do NOT Collect</h2>
+        <p>
+            Unlike many cloud-dependent utilities, PDF Maker does not require user registration or personal accounts. We do <strong>NOT</strong> collect, store, or sell any of the following:
+        </p>
+        <ul>
+            <li><strong>No User Account Information:</strong> No names, email addresses, phone numbers, usernames, or passwords.</li>
+            <li><strong>No Personal Files or Documents:</strong> We never transmit or upload your photos, camera captures, text documents, or generated PDFs to any server.</li>
+            <li><strong>No Biometrics:</strong> We do not scan, capture, or store facial recognition or biometric data.</li>
+            <li><strong>No Precise Location Data:</strong> We never request or access GPS or fine-grained location services.</li>
+            <li><strong>No Contacts, Calendar, or Microphones:</strong> We never access your address book, call logs, calendar events, or audio recorders.</li>
+        </ul>
+
+        <h2>3. Device Permissions and How They Are Used</h2>
+        <p>
+            To deliver core scanning and conversion functionality, the App requests minimal Android system permissions strictly in accordance with Google Play's Least-Privilege guidelines:
+        </p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Type</th>
+                        <th>Purpose &amp; Data Handling</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>android.permission.CAMERA</code></td>
+                        <td><span class="tag-pill">Runtime (Dangerous)</span></td>
+                        <td>
+                            <strong>Document Scanning:</strong> Required only when you use the "Scan Document" or "Smart Scan" features to capture physical documents, receipts, or notes using your device's camera. The captured image frames are processed entirely in memory on your device to detect edges, crop, and compile into a PDF. Images are never transmitted over the internet.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>Photo Picker / Storage</code></td>
+                        <td><span class="tag-pill">Zero-Permission / Scoped</span></td>
+                        <td>
+                            <strong>Images to PDF:</strong> Allows you to pick images from your device gallery to convert them into PDF files. Uses Android's native system Photo Picker (`PickVisualMedia`) without requiring broad storage access permissions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>android.permission.INTERNET</code></td>
+                        <td><span class="tag-pill">Install-Time (Normal)</span></td>
+                        <td>
+                            <strong>Ad Delivery:</strong> Used by the third-party Google Mobile Ads (AdMob) SDK to fetch and display banner advertisements within the app.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                        <td><span class="tag-pill">Install-Time (Normal)</span></td>
+                        <td>
+                            <strong>Connection Status:</strong> Allows the Google Mobile Ads SDK to determine whether an active internet connection is available before attempting to request banner ads.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>4. Third-Party Advertising (Google AdMob)</h2>
+        <p>
+            The App includes banner advertisements provided by <strong>Google AdMob</strong> (Google Mobile Ads SDK). To display relevant advertisements, prevent ad fraud, and generate ad delivery metrics, Google AdMob may automatically collect and process certain non-personal and pseudonymous device data, including:
+        </p>
+        <ul>
+            <li><strong>Device Identifiers:</strong> Mobile advertising identifiers (such as the Google Advertising ID / AAID).</li>
+            <li><strong>IP Address &amp; Network Information:</strong> Used to estimate coarse (country/city level) location and verify connection integrity.</li>
+            <li><strong>App Interaction &amp; Performance Data:</strong> Ad views, clicks, interaction timestamps, diagnostic crash logs, and SDK performance statistics.</li>
+        </ul>
+        <p>
+            For detailed information on how Google collects, protects, and processes advertising data, please review Google's official privacy documentation:
+        </p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Privacy and Security Information</a></li>
+        </ul>
+
+        <h3>How You Can Control or Reset Advertising Data</h3>
+        <p>
+            You have full control over personalized advertising on your Android device:
+        </p>
+        <ul>
+            <li><strong>Reset or Delete Advertising ID:</strong> Go to your Android device <em>Settings &rarr; Google &rarr; All services &rarr; Ads</em> (or <em>Privacy &rarr; Ads</em>) and tap <strong>"Reset advertising ID"</strong> or <strong>"Delete advertising ID"</strong>.</li>
+            <li><strong>Opt Out of Personalized Ads:</strong> Visit <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google Ad Settings</a> to manage your ad preferences.</li>
+        </ul>
+
+        <h2>5. Google Play Console Data Safety Declaration</h2>
+        <p>
+            For complete transparency when viewing our Google Play Store listing, the table below summarizes our official Data Safety disclosures:
+        </p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Collected by Developer?</th>
+                        <th>Collected by 3rd Party (AdMob)?</th>
+                        <th>Purpose</th>
+                        <th>Encrypted in Transit?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Personal Info</strong> (Name, Email, Phone, Address)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Photos &amp; Documents</strong> (PDFs, Scans, Camera frames)</td>
+                        <td>No (Processed locally only)</td>
+                        <td>No</td>
+                        <td>Local PDF Creation</td>
+                        <td>Processed on-device; not transmitted</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Device or Other IDs</strong> (Advertising ID)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Advertising, Analytics, Fraud Prevention</td>
+                        <td>Yes (HTTPS / TLS)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>App Activity</strong> (Ad interactions)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Ad serving &amp; measurement</td>
+                        <td>Yes (HTTPS / TLS)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diagnostics</strong> (Crash logs, SDK performance)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>SDK stability &amp; diagnostics</td>
+                        <td>Yes (HTTPS / TLS)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>6. Data Storage, Retention, and Deletion</h2>
+        <p>
+            <strong>Local Storage:</strong> All PDF documents created by the App are saved inside your device's private app storage (sandboxed inside <code>context.filesDir/generated_pdfs</code>) or explicitly exported to your device's public storage upon your request.
+        </p>
+        <p>
+            <strong>User Control &amp; Deletion:</strong> You retain complete ownership and control over your files:
+        </p>
+        <ul>
+            <li>You can view and delete individual PDFs at any time from the "My PDFs" screen in the App.</li>
+            <li>You can clear all app storage and generated files via <em>Settings &rarr; Storage Management &rarr; Clear Storage</em>.</li>
+            <li>Uninstalling the App from your device permanently removes all locally stored PDFs and cache files created by the App.</li>
+        </ul>
+
+        <h2>7. Children's Privacy (COPPA &amp; GDPR Compliance)</h2>
+        <p>
+            Our App is a general-audience productivity tool and is <strong>not directed to children under the age of 13</strong> (or under 16 in the European Economic Area). We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately, and we will take prompt steps to remove any such information.
+        </p>
+
+        <h2>8. Security Measures</h2>
+        <p>
+            We prioritize the security of your files and data:
+        </p>
+        <ul>
+            <li>All document conversion algorithms and optical character enhancements execute locally inside the Android sandboxed application environment.</li>
+            <li>Network communication by the Google Mobile Ads SDK is strictly encrypted using modern Transport Layer Security (HTTPS/TLS).</li>
+            <li>No unauthorized cloud endpoints or third-party tracking libraries are integrated into the application.</li>
+        </ul>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update our Privacy Policy from time to time to reflect modifications in our practices, legal requirements, or Google Play policy updates. When we do, we will update the "Last Updated" date at the top of this page. We encourage users to periodically review this Privacy Policy to stay informed about how we protect user privacy.
+        </p>
+
+        <h2>10. Contact Us</h2>
+        <p>
+            If you have any questions, concerns, feedback, or requests regarding this Privacy Policy, your data, or our privacy practices, please contact us at:
+        </p>
+        <div class="contact-box">
+            <strong>WebScale Agency</strong><br>
+            Developer of PDF Maker: Scan &amp; Convert PDF<br>
+            📧 Email: <a href="mailto:webscale.agency12@gmail.com">webscale.agency12@gmail.com</a><br>
+            Application ID: <code>com.aistudio.pdfmaker.zqpvkm</code>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 WebScale Agency. All rights reserved. &bull; PDF Maker: Scan &amp; Convert PDF
+    </footer>
+</div>
+
+</body>
+</html>
+
